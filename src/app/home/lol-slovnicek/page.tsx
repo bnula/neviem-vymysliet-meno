@@ -16,7 +16,7 @@ export default function Page() {
             <h1 className="text-2xl font-bold">Lol slovnicek</h1>
             <ul className="list-inside list-disc">
                 {lolVyznamy.map((text, index) => (
-                    <li>{text}</li>
+                    <li key={index}>{text}</li>
                 ))}
             </ul>
         </div>
