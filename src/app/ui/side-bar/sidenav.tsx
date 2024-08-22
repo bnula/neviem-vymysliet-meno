@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { PowerIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import NavLinks from './nav-links';
-import SiteLogo from '../site-logo';
+import PointsCounter from '../points-counter';
 // import { signOut } from '@/auth';
 
 export default function SideNav() {
@@ -18,10 +18,10 @@ export default function SideNav() {
         <div className="flex h-full flex-col px-3 py-4 md:px-2">
         <Link
             className="mb-2 flex h-20 items-end justify-start rounded-md bg-teal-600 p-4 md:h-40"
-            href="/"
+            href="/home"
         >
             <div className="w-32 text-white md:w-40">
-            <SiteLogo />
+            <PointsCounter />
             </div>
         </Link>
 
