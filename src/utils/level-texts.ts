@@ -51,7 +51,7 @@ const levelTexts: LevelSectionProps[] = [
                 text: "❔ Testicek (🪙 10)"
             },
             {
-                url: "/decka/1",
+                url: "/home/decka/1",
                 text: "🐈‍⬛🐈"
             }
         ]
@@ -90,7 +90,7 @@ const levelTexts: LevelSectionProps[] = [
                 text: "🌐 Practice Site"
             },
             {
-                url: "/decka/2",
+                url: "/home/decka/2",
                 text: "🐈‍⬛🐈"
             }
         ]
@@ -129,7 +129,7 @@ const levelTexts: LevelSectionProps[] = [
                 text: "🛠️ Bandicam Screen Recorder"
             },
             {
-                url: "/decka/3",
+                url: "/home/decka/3",
                 text: "🐈‍⬛🐈"
             }
         ]
@@ -184,7 +184,7 @@ const levelTexts: LevelSectionProps[] = [
                 text: "📺 Learn Postman in 15 Minutes"
             },
             {
-                url: "/decka/4",
+                url: "/home/decka/4",
                 text: "🐈‍⬛🐈"
             }
         ]
@@ -219,7 +219,7 @@ const levelTexts: LevelSectionProps[] = [
                 url: "https://www.youtube.com/watch?v=kbKty5ZVKMY&ab_channel=AdamFiner-LearnBIOnline"
             },
             {
-                url: "/decka/5",
+                url: "/home/decka/5",
                 text: "🐈‍⬛🐈"
             }
         ]
@@ -266,7 +266,7 @@ const levelTexts: LevelSectionProps[] = [
                 text: "✏️ HTML Introduction"
             },
             {
-                url: "/decka/6",
+                url: "/home/decka/6",
                 text: "🐈‍⬛🐈"
             }
         ]
@@ -305,7 +305,7 @@ const levelTexts: LevelSectionProps[] = [
                 text: "Intro to Gherkin | How To Write A Test In Gherkin"
             },
             {
-                url: "/decka/7",
+                url: "/home/decka/7",
                 text: "🐈‍⬛🐈"
             }
         ]
@@ -340,7 +340,7 @@ const levelTexts: LevelSectionProps[] = [
                 text: "TestRail Product Demo"
             },
             {
-                url: "/decka/8",
+                url: "/home/decka/8",
                 text: "🐈‍⬛🐈"
             }
         ]
@@ -371,7 +371,7 @@ const levelTexts: LevelSectionProps[] = [
         ],
         links: [
             {
-                url: "/decka/9",
+                url: "/home/decka/9",
                 text: "🐈‍⬛🐈"
             }
         ]
@@ -403,7 +403,7 @@ const levelTexts: LevelSectionProps[] = [
         ],
         links: [
             {
-                url: "/decka/10",
+                url: "/home/decka/10",
                 text: "🐈‍⬛🐈"
             }
         ]
