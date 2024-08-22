@@ -20,7 +20,7 @@ export default function NavLinks() {
                 className={clsx(
                 'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-teal-50 p-3 text-sm font-medium hover:bg-teal-100 hover:text-teal-600 md:flex-none md:justify-start md:p-2 md:px-3',
                 {
-                    'bg-sky-100 text-teal-600': pathname === `Level ${index}`,
+                    'bg-sky-100 text-teal-600': pathname === `/home/levels/${index+1}`,
                 },
                 )}
             >
@@ -34,7 +34,7 @@ export default function NavLinks() {
             className={clsx(
             'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-teal-50 p-3 text-sm font-medium hover:bg-teal-100 hover:text-teal-600 md:flex-none md:justify-start md:p-2 md:px-3',
             {
-                'bg-sky-100 text-teal-600': pathname === `Level`,
+                'bg-sky-100 text-teal-600': pathname === `/home/rewards`,
             },
             )}
         >
@@ -46,7 +46,7 @@ export default function NavLinks() {
             className={clsx(
             'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-teal-50 p-3 text-sm font-medium hover:bg-teal-100 hover:text-teal-600 md:flex-none md:justify-start md:p-2 md:px-3',
             {
-                'bg-sky-100 text-teal-600': pathname === `Level`,
+                'bg-sky-100 text-teal-600': pathname === "/home/positions",
             },
             )}
         >
@@ -58,7 +58,7 @@ export default function NavLinks() {
             className={clsx(
             'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-teal-50 p-3 text-sm font-medium hover:bg-teal-100 hover:text-teal-600 md:flex-none md:justify-start md:p-2 md:px-3',
             {
-                'bg-sky-100 text-teal-600': pathname === `Level`,
+                'bg-sky-100 text-teal-600': pathname === `/home/lol-slovnicek`,
             },
             )}
         >
