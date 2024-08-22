@@ -13,9 +13,12 @@ const lolVyznamy = [
 export default function Page() {
     return (
         <div>
-            {lolVyznamy.map((text, index) => (
-                <p>{text}</p>
-            ))}
+            <h1 className="text-2xl font-bold">Lol slovnicek</h1>
+            <ul className="list-inside list-disc">
+                {lolVyznamy.map((text, index) => (
+                    <li>{text}</li>
+                ))}
+            </ul>
         </div>
     )
 }
