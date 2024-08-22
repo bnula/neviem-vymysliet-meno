@@ -49,7 +49,23 @@ export const levelRewards: Reward[] = [
 
 export const pointRewards: Reward[] = [
     {
+        title: "🪙 500 pts",
+        description: "Rumove kino"
+    },
+    {
+        title: "🪙 500 pts",
+        description: "Veeeeča"
+    },
+    {
+        title: "🪙 500 pts",
+        description: "Akcia"
+    },
+    {
+        title: "🪙 500 pts",
+        description: "Custom tricko"
+    },
+    {
         title: "🪙 160 pts",
-        description: ""
-    }
+        description: "Nieco pre prckov"
+    },
 ];

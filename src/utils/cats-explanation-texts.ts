@@ -12,6 +12,7 @@ const catsExplanation: CatsExplanation[] = [
     {
         level: 2,
         content: `<h2>Imagine Indy and Grey are now in their cat house, and they want to make sure all the rooms are perfect.</h2>
+        <br>
         <h3>Writing Test Cases:</h3>
         <p>Indy and Grey sit down and think about everything that needs to be checked to ensure the cat house is comfy and safe.</p>
         <p>Test Case Structure: Each test case will have:</p>
@@ -84,6 +85,7 @@ const catsExplanation: CatsExplanation[] = [
                 </ul>
             </li>
         </ul>
+        <br>
         <h3>Executing Test Cases</h3>
         <ul class="list-disc list-inside">
             <li>Grey takes Indy&apos;s list and starts performing the tests one by one.</li>
@@ -124,7 +126,8 @@ const catsExplanation: CatsExplanation[] = [
     {
         level: 3,
         content: `<p>Now, Indy and Grey need to manage the defects (problems) they found in their cat house.</p>
-        <ol>
+        <br>
+        <ol class="list-decimal list-inside">
             <li>
                 <p><strong>Defect Life Cycle:</strong></p>
                 <ul class="list-disc list-inside">
@@ -140,6 +143,7 @@ const catsExplanation: CatsExplanation[] = [
                     </li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Reporting Defects:</strong></p>
                 <ul class="list-disc list-inside">
@@ -157,6 +161,7 @@ const catsExplanation: CatsExplanation[] = [
                     </li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Using a Bug Tracking Tool:</strong></p>
                 <ul class="list-disc list-inside">
@@ -211,7 +216,8 @@ const catsExplanation: CatsExplanation[] = [
     {
         level: 4,
         content: `<p>Now, Indy and Grey are curious about how the different parts of their cat house talk to each other. They want to test the communication between these parts, just like how APIs (Application Programming Interfaces) work in software.</p>
-        <ol>
+        <br>
+        <ol class="list-decimal list-inside">
             <li>
                 <p><strong>Understanding APIs:</strong></p>
                 <ul class="list-disc list-inside">
@@ -219,6 +225,7 @@ const catsExplanation: CatsExplanation[] = [
                     <li><strong>API (Application Programming Interface):</strong> It&rsquo;s a way for different parts of a system to communicate. For example, a weather app talks to a weather service API to get the latest weather data.</li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Setting Up Postman:</strong></p>
                 <ul class="list-disc list-inside">
@@ -226,6 +233,7 @@ const catsExplanation: CatsExplanation[] = [
                     <li><strong>Postman Interface:</strong> It has different sections like the request builder (where you create and send messages) and the response viewer (where you see the replies).</li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Creating and Sending Basic API Requests:</strong></p>
                 <ul class="list-disc list-inside">
@@ -239,6 +247,7 @@ const catsExplanation: CatsExplanation[] = [
                     </li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>API Testing Challenge:</strong></p>
                 <ul class="list-disc list-inside">
@@ -266,6 +275,7 @@ const catsExplanation: CatsExplanation[] = [
                     </li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Documenting Findings:</strong></p>
                 <ul class="list-disc list-inside">
@@ -284,7 +294,8 @@ const catsExplanation: CatsExplanation[] = [
     {
         level: 5,
         content: `<h2>Now, Indy and Grey want to understand how to look inside the database of their cat house system, where all their activities and statuses are stored.</h2>
-        <ol>
+        <br>
+        <ol class="list-decimal list-inside>
             <li>
                 <p><strong>Understanding SQL (Structured Query Language):</strong></p>
                 <ul class="list-disc list-inside">
@@ -292,6 +303,7 @@ const catsExplanation: CatsExplanation[] = [
                     <li><strong>SQL:</strong> SQL is like a special language they use to ask questions about what&rsquo;s in the book or to write new things in the book.</li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Watching Tutorials:</strong></p>
                 <ul class="list-disc list-inside">
@@ -305,6 +317,7 @@ const catsExplanation: CatsExplanation[] = [
                     </li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Practicing Basic SQL Queries:</strong></p>
                 <ul class="list-disc list-inside">
@@ -348,6 +361,7 @@ const catsExplanation: CatsExplanation[] = [
                     </li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Database Challenge:</strong></p>
                 <ul class="list-disc list-inside">
@@ -376,6 +390,7 @@ const catsExplanation: CatsExplanation[] = [
                     </li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Documenting Findings:</strong></p>
                 <ul class="list-disc list-inside">
@@ -394,7 +409,8 @@ const catsExplanation: CatsExplanation[] = [
     {
         level: 6,
         content: `<p>Now, Indy and Grey want to learn how to think like programmers and write simple scripts to automate their tasks.</p>
-        <ol>
+        <br>
+        <ol class="list-decimal list-inside>
             <li>
                 <p><strong>Understanding Basic Programming Concepts:</strong></p>
                 <ul class="list-disc list-inside">
@@ -406,6 +422,7 @@ const catsExplanation: CatsExplanation[] = [
                     </li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Learning Git Basics:</strong></p>
                 <ul class="list-disc list-inside">
@@ -418,6 +435,7 @@ const catsExplanation: CatsExplanation[] = [
                     </li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Understanding HTML Basics:</strong></p>
                 <ul class="list-disc list-inside">
@@ -428,6 +446,7 @@ const catsExplanation: CatsExplanation[] = [
                     </li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Mini Project - Writing a Script:</strong></p>
                 <ul class="list-disc list-inside">
@@ -435,12 +454,11 @@ const catsExplanation: CatsExplanation[] = [
                     <li><strong>Example Script:</strong>
                         <ul class="list-disc list-inside">
                             <li><strong>python:</strong></li>
-                            <li>
+                            <br>
                                 <pre><div><div><code>name = &quot;Indy&quot;
-        for letter in name:
-            print(letter)
+for letter in name:
+print(letter)
         </code></div></div></pre>
-                            </li>
                         </ul>
                     </li>
                     <li><strong>Explanation:</strong>
@@ -451,6 +469,7 @@ const catsExplanation: CatsExplanation[] = [
                     </li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Documenting Findings:</strong></p>
                 <ul class="list-disc list-inside">
@@ -469,7 +488,8 @@ const catsExplanation: CatsExplanation[] = [
     {
         level: 7,
         content: `<p>Indy and Grey are curious about making their testing work easier and faster. They discover that automation tools can help them with repetitive tasks, and they decide to learn how to use these tools, starting with the Robot Framework.</p>
-    <ol>
+        <br>
+    <ol class="list-decimal list-inside">
         <li>
             <p><strong>Introductory Video on Selenium and Gherkin:</strong></p>
             <ul class="list-disc list-inside">
@@ -478,6 +498,7 @@ const catsExplanation: CatsExplanation[] = [
                 <li><strong>Why Learn This:</strong> Just like how Indy and Grey can train themselves to do the same things every day, they can train a robot to handle routine testing tasks, freeing up time for more important work.</li>
             </ul>
         </li>
+        <br>
         <li>
             <p><strong>Tool Exploration with Robot Framework:</strong></p>
             <ul class="list-disc list-inside">
@@ -491,6 +512,7 @@ const catsExplanation: CatsExplanation[] = [
                 <li><strong>Explanation:</strong> This script opens a web browser, goes to the cat toy website, checks the title of the page to make sure they&rsquo;re on the right site, and then closes the browser. It&rsquo;s a simple automation that helps Indy and Grey check the website without having to do it manually.</li>
             </ul>
         </li>
+        <br>
         <li>
             <p><strong>Mini Project - Automating a Simple Test Case:</strong></p>
             <ul class="list-disc list-inside">
@@ -502,6 +524,7 @@ const catsExplanation: CatsExplanation[] = [
                 <li><strong>Explanation:</strong> In this script, Indy and Grey automate logging into the website. They enter a username and password, click the login button, and check if they successfully land on the user dashboard page. This script saves them time, as they no longer need to log in manually each time they want to check their account.</li>
             </ul>
         </li>
+        <br>
         <li>
             <p><strong>Understanding the Concepts:</strong></p>
             <ul class="list-disc list-inside">
@@ -510,6 +533,7 @@ const catsExplanation: CatsExplanation[] = [
                 <li><strong>Robot Framework:</strong> Think of Robot Framework as the cat&rsquo;s toy launcher. It does the work of throwing the toy (running the test) so Indy and Grey can focus on other things.</li>
             </ul>
         </li>
+        <br>
         <li>
             <p><strong>Project Reflection:</strong></p>
             <ul class="list-disc list-inside">
@@ -521,7 +545,8 @@ const catsExplanation: CatsExplanation[] = [
     {
         level: 8,
         content: `<p>Now, Indy and Grey want to organize their testing activities and keep track of their progress using test management tools.</p>
-        <ol>
+        <br>
+        <ol class="list-decimal list-inside">
             <li>
                 <p><strong>Understanding Test Management Tools:</strong></p>
                 <ul class="list-disc list-inside">
@@ -530,6 +555,7 @@ const catsExplanation: CatsExplanation[] = [
                     <li><strong>Example:</strong> Tools like TestRail help them create test plans, run tests, and report results in a systematic way.</li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Reading User Guides:</strong></p>
                 <ul class="list-disc list-inside">
@@ -542,6 +568,7 @@ const catsExplanation: CatsExplanation[] = [
                     </li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Setting Up a Test Project:</strong></p>
                 <ul class="list-disc list-inside">
@@ -555,6 +582,7 @@ const catsExplanation: CatsExplanation[] = [
                     </li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Simulating a Test Cycle:</strong></p>
                 <ul class="list-disc list-inside">
@@ -569,6 +597,7 @@ const catsExplanation: CatsExplanation[] = [
                     </li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Documenting Findings:</strong></p>
                 <ul class="list-disc list-inside">
@@ -588,7 +617,8 @@ const catsExplanation: CatsExplanation[] = [
     {
         level: 9,
         content: `<p>Indy and Grey now want to learn how to communicate better and work as a team to make their cat house testing activities more effective.</p>
-        <ol>
+        <br>
+        <ol class="list-decimal list-inside">
             <li>
                 <p><strong>Role-Playing for Defect Reporting:</strong></p>
                 <ul class="list-disc list-inside">
@@ -607,6 +637,7 @@ const catsExplanation: CatsExplanation[] = [
                     </li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Group Project - Teamwork Description:</strong></p>
                 <ul class="list-disc list-inside">
@@ -625,6 +656,7 @@ const catsExplanation: CatsExplanation[] = [
                     </li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Feedback Session:</strong></p>
                 <ul class="list-disc list-inside">
@@ -643,6 +675,7 @@ const catsExplanation: CatsExplanation[] = [
                     </li>
                 </ul>
             </li>
+            <br>
             <li>
                 <p><strong>Documenting Findings:</strong></p>
                 <ul class="list-disc list-inside">
