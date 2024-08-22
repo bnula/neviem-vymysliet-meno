@@ -1,10 +1,4 @@
 "use client";
-
-import {
-    UserGroupIcon,
-    HomeIcon,
-    DocumentDuplicateIcon,
-} from '@heroicons/react/24/outline';
 import clsx from 'clsx';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -22,7 +16,7 @@ export default function NavLinks() {
             return (
             <Link
                 key={link.title}
-                href={""}
+                href={`/home/levels/${index+1}`}
                 className={clsx(
                 'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-teal-50 p-3 text-sm font-medium hover:bg-teal-100 hover:text-teal-600 md:flex-none md:justify-start md:p-2 md:px-3',
                 {
@@ -34,6 +28,30 @@ export default function NavLinks() {
             </Link>
             );
         })}
+        <Link
+            key="Rewards"
+            href={`/home/rewards`}
+            className={clsx(
+            'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-teal-50 p-3 text-sm font-medium hover:bg-teal-100 hover:text-teal-600 md:flex-none md:justify-start md:p-2 md:px-3',
+            {
+                'bg-sky-100 text-teal-600': pathname === `Level`,
+            },
+            )}
+        >
+            <p className="hidden md:block">Rewards</p>
+        </Link>
+        <Link
+            key="Positions"
+            href={`/home/positions`}
+            className={clsx(
+            'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-teal-50 p-3 text-sm font-medium hover:bg-teal-100 hover:text-teal-600 md:flex-none md:justify-start md:p-2 md:px-3',
+            {
+                'bg-sky-100 text-teal-600': pathname === `Level`,
+            },
+            )}
+        >
+            <p className="hidden md:block">Positions</p>
+        </Link>
         </>
     );
 }
