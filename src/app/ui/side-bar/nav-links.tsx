@@ -24,7 +24,7 @@ export default function NavLinks() {
                 },
                 )}
             >
-                <p className="hidden md:block">{link.title}</p>
+                <p className="md:block">{link.title}</p>
             </Link>
             );
         })}
@@ -38,7 +38,7 @@ export default function NavLinks() {
             },
             )}
         >
-            <p className="hidden md:block">Rewards</p>
+            <p className="md:block">Rewards</p>
         </Link>
         <Link
             key="Positions"
@@ -50,7 +50,7 @@ export default function NavLinks() {
             },
             )}
         >
-            <p className="hidden md:block">Positions</p>
+            <p className="md:block">Positions</p>
         </Link>
         </>
     );

@@ -1,10 +1,19 @@
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
-import { PowerIcon } from '@heroicons/react/24/outline';
+import { PowerIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import NavLinks from './nav-links';
 import SiteLogo from '../site-logo';
 // import { signOut } from '@/auth';
 
 export default function SideNav() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <div className="flex h-full flex-col px-3 py-4 md:px-2">
         <Link
@@ -15,9 +24,30 @@ export default function SideNav() {
             <SiteLogo />
             </div>
         </Link>
-        <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
+
+        {/* Hamburger Button for Small Screens */}
+        <div className="md:hidden flex justify-between items-center">
+            <button
+            className="text-gray-500 focus:outline-none"
+            onClick={toggleMenu}
+            >
+            {isMenuOpen ? (
+                <XMarkIcon className="w-6 h-6" />
+            ) : (
+                <Bars3Icon className="w-6 h-6" />
+            )}
+            </button>
+        </div>
+
+        {/* Collapsible Menu for Small Screens */}
+        <div
+            className={`${
+            isMenuOpen ? 'block' : 'hidden'
+            } md:flex flex-col grow justify-between mt-4 space-y-2`}
+        >
             <NavLinks />
-            <div className="hidden h-auto w-full grow rounded-md bg-gray-50 md:block"></div>
+            <div className="h-auto w-full grow rounded-md bg-gray-50"></div>
+
             <form
             // action ={async () => {
             //     'use server';

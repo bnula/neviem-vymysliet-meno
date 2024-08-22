@@ -7,28 +7,28 @@ export default function Page({ params }: { params: {id: string} }) {
 
     return (
         <div>
-            <h3>{levelText.title}</h3>
-            <p><strong>Objectives:</strong></p>
-            <ul>
+            <h1 className="font-bold text-3xl">{levelText.title}</h1>
+            <p className="text-xl underline">Objectives:</p>
+            <ul className="list-disc list-inside">
                 {levelText.objectives.map((item, index) => (
-                    <li key={index}>{item}</li>
+                    <li className="px-3" key={index}>{item}</li>
                 ))}
             </ul>
             <p><strong>Tasks:</strong></p>
-            <ol>
+            <ol className="list-decimal list-inside">
                 {levelText.tasks.map((item, index) => (
-                    <li key={index}><strong>{item.title}</strong>: {item.text}</li>
+                    <li className="px-3" key={index}><strong>{item.title}</strong>: {item.text}</li>
                 ))}
             </ol>
             <p><strong>Rewards:</strong></p>
-            <ul>
+            <ul className="list-disc list-inside">
                 {levelText.rewards.map((item, index) => (
-                    <li key={index}>{item}</li>
+                    <li className="px-3" key={index}>{item}</li>
                 ))}
             </ul>
-            <ul>
+            <ul className="list-disc list-inside">
                 {levelText.links.map((item, index) => (
-                    <li key={index}><a href={item.url} target="_blank">{item.text}</a></li>
+                    <li className="px-3" key={index}><a href={item.url} target="_blank">{item.text}</a></li>
                 ))}
             </ul>
         </div>
