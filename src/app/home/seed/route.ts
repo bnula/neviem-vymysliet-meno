@@ -85,6 +85,6 @@
 //         return new Response(JSON.stringify({ error }), { status: 500 });
 //     }
 // }
-export default function seed() {
+export async function GET() {
     return null;
 }
