@@ -16,9 +16,16 @@ export async function fetchTasks(level: number) {
 export async function fetchProgress(userId: string) {
     try {
 
-        const data = await sql<Progress>`SELECT * FROM progress WHERE user_id = ${userId}`
-
-        return data.rows[0];
+        const data = await sql<Progress>`
+        SELECT
+            user_id as "userId",
+            levels_completed as "levelsCompleted",
+            max_level as "maxLevel",
+            points,
+            user_id as "userId"
+        FROM progress WHERE user_id = ${userId}`
+        const progDb = data.rows[0]
+        return progDb;
     } catch (error) {
         console.error("Database Error:", error);
         throw new Error("Failed to fetch progress data.")

@@ -18,7 +18,7 @@ export default async function Page({ params }: { params: {id: string} }) {
             <p><strong>Tasks:</strong></p>
             <ol className="list-decimal list-inside">
                 {tasks.map((item, index) => (
-                    <li className="px-3" key={index}><strong>{item.title}</strong>: {item.text}</li>
+                    <li className="px-3" key={index}><strong>{item.title}</strong>: {item.text} <input type="checkbox" className="size-5"/></li>
                 ))}
             </ol>
             <p><strong>Rewards:</strong></p>

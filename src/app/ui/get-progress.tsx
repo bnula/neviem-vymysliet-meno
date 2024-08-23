@@ -8,7 +8,7 @@ export default async function GetProgress() {
         <div>
             Bodiky: {progress.points}
             <br />
-            Tasky: {progress.levelsCompleted} / {progress.maxLevels}
+            Tasky: {progress.levelsCompleted} / {progress.maxLevel}
         </div>
     )
 }
