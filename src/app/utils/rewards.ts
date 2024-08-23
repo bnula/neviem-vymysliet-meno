@@ -1,4 +1,4 @@
-import { Reward } from "@/utils/types/reward";
+import { Reward } from "@/app/utils/types/reward";
 
 export const levelRewards: Reward[] = [
     {

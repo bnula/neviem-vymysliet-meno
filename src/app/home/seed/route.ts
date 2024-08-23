@@ -1,6 +1,6 @@
 // import bcrypt from 'bcrypt';
 // import { db } from '@vercel/postgres';
-// import { tasks } from '@/utils/tasks';
+// import { tasks } from '@/app/utils/tasks';
 
 // const client = await db.connect();
 
@@ -85,3 +85,6 @@
 //         return new Response(JSON.stringify({ error }), { status: 500 });
 //     }
 // }
+export default function seed() {
+    return null;
+}

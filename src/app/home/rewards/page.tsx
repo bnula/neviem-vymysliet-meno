@@ -1,4 +1,4 @@
-import { levelRewards, pointRewards } from "@/utils/rewards"
+import { levelRewards, pointRewards } from "@/app/utils/rewards"
 
 export default function Page() {
     return (

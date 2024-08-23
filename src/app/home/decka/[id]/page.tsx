@@ -1,5 +1,5 @@
 import React from "react";
-import catsExplanation from "@/utils/cats-explanation-texts";
+import catsExplanation from "@/app/utils/cats-explanation-texts";
 
 export default function Page({params} : {params: {id: string}}) {
     const id = params.id;

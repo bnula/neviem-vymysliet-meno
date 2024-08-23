@@ -1,4 +1,4 @@
-import { CatsExplanation } from "@/utils/types/cats-explanation";
+import { CatsExplanation } from "@/app/utils/types/cats-explanation";
 import { Task } from "./task";
 
 export interface LevelSectionProps {

@@ -1,4 +1,4 @@
-import { CatsExplanation } from "@/utils/types/cats-explanation";
+import { CatsExplanation } from "@/app/utils/types/cats-explanation";
 
 const catsExplanation: CatsExplanation[] = [
     {

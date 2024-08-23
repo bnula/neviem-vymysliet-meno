@@ -1,4 +1,4 @@
-import positions from "@/utils/types/position"
+import positions from "@/app/utils/types/position"
 
 export default function Page() {
     return (

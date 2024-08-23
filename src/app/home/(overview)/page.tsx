@@ -1,7 +1,10 @@
+import GetProgress from "@/app/ui/get-progress";
+import { SessionProvider } from "next-auth/react";
+
 export default function Page() {
     return (
-        <div>
-            Tu nieco bude
-        </div>
+        <SessionProvider>
+            <GetProgress  />
+        </SessionProvider>
     )
 }

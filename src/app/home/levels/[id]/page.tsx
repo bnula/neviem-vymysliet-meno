@@ -1,8 +1,10 @@
-import levelTexts from "@/utils/level-texts";
+import { fetchTasks } from "@/app/data/crud-operations";
+import levelTexts from "@/app/utils/level-texts";
 
-export default function Page({ params }: { params: {id: string} }) {
+export default async function Page({ params }: { params: {id: string} }) {
     const id = params.id;
     const levelText = levelTexts.filter(l => l.title.includes(id))[0];
+    const tasks = await fetchTasks(Number(id));
 
     return (
         <div>
@@ -15,7 +17,7 @@ export default function Page({ params }: { params: {id: string} }) {
             </ul>
             <p><strong>Tasks:</strong></p>
             <ol className="list-decimal list-inside">
-                {levelText.tasks.map((item, index) => (
+                {tasks.map((item, index) => (
                     <li className="px-3" key={index}><strong>{item.title}</strong>: {item.text}</li>
                 ))}
             </ol>

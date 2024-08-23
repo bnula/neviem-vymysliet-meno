@@ -1,5 +1,5 @@
-import { LevelSectionProps } from "./types/level-selection-props"
-import { tasks } from "./tasks"
+import { LevelSectionProps } from "./types/level-selection-props";
+import { tasks } from "./tasks";
 
 const levelTexts: LevelSectionProps[] = [
     {
@@ -35,7 +35,7 @@ const levelTexts: LevelSectionProps[] = [
                 text: "📺 Software Testing Explained in 100 Seconds"
             },
             {
-                url: "/sdlc-quiz",
+                url: "/home/quiz",
                 text: "❔ Testicek"
             },
             {

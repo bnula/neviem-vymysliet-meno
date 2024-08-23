@@ -2,7 +2,7 @@
 import clsx from 'clsx';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import levelTexts from '@/utils/level-texts';
+import levelTexts from '@/app/utils/level-texts';
 
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
