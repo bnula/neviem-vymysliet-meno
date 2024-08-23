@@ -1,4 +1,5 @@
 import { CatsExplanation } from "@/utils/types/cats-explanation";
+import { Task } from "./task";
 
 export interface LevelSectionProps {
     title: string;
@@ -12,11 +13,4 @@ export interface LevelSectionProps {
 export type LevelLink = {
     url: string;
     text: string;
-}
-
-export type Task = {
-    title: string;
-    text: string;
-    points: number;
-    completed: boolean;
 }

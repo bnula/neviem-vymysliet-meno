@@ -3,7 +3,6 @@ import levelTexts from "@/utils/level-texts";
 export default function Page({ params }: { params: {id: string} }) {
     const id = params.id;
     const levelText = levelTexts.filter(l => l.title.includes(id))[0];
-    console.log(levelText);
 
     return (
         <div>

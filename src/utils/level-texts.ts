@@ -1,4 +1,5 @@
 import { LevelSectionProps } from "./types/level-selection-props"
+import { tasks } from "./tasks"
 
 const levelTexts: LevelSectionProps[] = [
     {
@@ -7,26 +8,7 @@ const levelTexts: LevelSectionProps[] = [
             "Understand the basics of SDLC and STLC.",
             "Learn fundamental testing concepts."
         ],
-        tasks: [
-            {
-                title: "👀 Read Articles",
-                text: "Complete three beginner articles on SDLC and STLC.",
-                points: 20,
-                completed: false,
-            },
-            {
-                title: "📺 Watch Videos",
-                text: "Watch two YouTube tutorials on basic testing concepts.",
-                points: 20,
-                completed: false,
-            },
-            {
-                title: "❔ Quiz",
-                text: "Pass a quiz with at least 80% score on the learned concepts.",
-                points: 20,
-                completed: false,
-            }
-        ],
+        tasks: tasks.filter(t => t.level === 1),
         rewards: [
             'Badge: 👩‍🎓 "Testing Novice"',
             "🪙 60 pts"
@@ -34,27 +16,27 @@ const levelTexts: LevelSectionProps[] = [
         links: [
             {
                 url: "https://www.baeldung.com/cs/sdlc-vs-stlc",
-                text: "📖 Software Development and Testing Life Cycles (🪙 10)"
+                text: "📖 Software Development and Testing Life Cycles"
             },
             {
                 url: "https://www.tutorialspoint.com/sdlc/sdlc_overview.htm",
-                text: "📖 SDLC - Overview (🪙 10)"
+                text: "📖 SDLC - Overview"
             },
             {
                 url: "https://clockwise.software/blog/software-testing-lifecycle/",
-                text: "📖 A Complete Guide to the Software Testing Lifecycle (STLC) (🪙 10)"
+                text: "📖 A Complete Guide to the Software Testing Lifecycle (STLC)"
             },
             {
                 url: "https://www.youtube.com/watch?v=5b36UTNRmtI&ab_channel=Simplilearn",
-                text: "📺 What Is SDLC? | Introduction to Software Development Life Cycle (🪙 10)"
+                text: "📺 What Is SDLC? | Introduction to Software Development Life Cycle"
             },
             {
                 url: "https://www.youtube.com/watch?v=u6QfIXgjwGQ&ab_channel=Fireship",
-                text: "📺 Software Testing Explained in 100 Seconds (🪙 10)"
+                text: "📺 Software Testing Explained in 100 Seconds"
             },
             {
                 url: "/sdlc-quiz",
-                text: "❔ Testicek (🪙 10)"
+                text: "❔ Testicek"
             },
             {
                 url: "/home/decka/1",
@@ -68,26 +50,7 @@ const levelTexts: LevelSectionProps[] = [
             "Learn to write and execute test cases.",
             "Understand test case structure and components."
         ],
-        tasks: [
-            {
-                title: "📖 Read Boring Ass theory",
-                text: "Read on the theory of creating test cases. (🪙 40)",
-                points: 40,
-                completed: false,
-            },
-            {
-                title: "✏️ Create a Few Test Cases",
-                text: "Write 5 test cases for a sample application. (🪙 40)",
-                points: 40,
-                completed: false,
-            },
-            {
-                title: "📝 Execute Test Cases",
-                text: "Execute your test cases and document the results. (🪙 40)",
-                points: 40,
-                completed: false,
-            }
-        ],
+        tasks: tasks.filter(t => t.level === 2),
         rewards: [
             'Badge: 🗺️ "Test Case Creator"',
             "🪙 120 pts"
@@ -113,26 +76,7 @@ const levelTexts: LevelSectionProps[] = [
             "Understand how to report and manage defects.",
             "Learn to use a defect tracking tool."
         ],
-        tasks: [
-            {
-                title: "📖 Read Articles",
-                text: "Read articles on defect life cycle and defect reporting. (🪙 40)",
-                points: 40,
-                completed: false,
-            },
-            {
-                title: "🛠️ Tool Setup",
-                text: "Set up a bug tracking tool (e.g., JIRA) and report 3 sample defects. (🪙 40)",
-                points: 40,
-                completed: false,
-            },
-            {
-                title: "🗣️ Role-Playing",
-                text: "Participate in a role-playing exercise to practice reporting and tracking defects. (🪙 40)",
-                points: 40,
-                completed: false,
-            }
-        ],
+        tasks: tasks.filter(t => t.level === 3),
         rewards: [
             '🪳 "Bug Hunter"',
             "🪙 120 pts"
@@ -158,44 +102,7 @@ const levelTexts: LevelSectionProps[] = [
             "Understand the basics of API testing.",
             "Learn to use tools like Postman for API testing."
         ],
-        tasks: [
-            {
-                title: "📖 Read Articles",
-                text: "Read articles on the fundamentals of API testing. (🪙 40)",
-                points: 40,
-                completed: false,
-            },
-            {
-                title: "📺 Watch Tutorials",
-                text: "Watch video tutorials on using Postman for API testing. (🪙 40)",
-                points: 40,
-                completed: false,
-            },
-            {
-                title: "🛠️ Tool Setup",
-                text: "Install Postman and explore its interface. (🪙 40)",
-                points: 40,
-                completed: false,
-            },
-            {
-                title: "🖨️ Basic API Requests",
-                text: "Create and send basic GET and POST requests using Postman. (🪙 50)",
-                points: 40,
-                completed: false,
-            },
-            {
-                title: "🏇 API Testing Challenge",
-                text: "Perform testing on a sample API, including creating test cases for different endpoints. (🪙 50)",
-                points: 40,
-                completed: false,
-            },
-            {
-                title: "📃 Document Findings",
-                text: "Document your API testing process and findings. (🪙 40)",
-                points: 40,
-                completed: false,
-            }
-        ],
+        tasks: tasks.filter(t => t.level === 4),
         rewards: [
             'Badge: 🖱️ "API Tester"',
             "🪙 260 pts"
@@ -225,26 +132,7 @@ const levelTexts: LevelSectionProps[] = [
             "Learn basic SQL queries.",
             "Understand how to use SQL for database testing."
         ],
-        tasks: [
-            {
-                title: "📺 Watch Tutorials",
-                text: "Watch SQL tutorial for beginners. (🪙 40)",
-                points: 40,
-                completed: false,
-            },
-            {
-                title: "📝 Practice Queries",
-                text: "Write and execute 5 basic SQL queries (e.g., SELECT, INSERT). (🪙 60)",
-                points: 60,
-                completed: false,
-            },
-            {
-                title: "🏇 Database Challenge",
-                text: "Complete a database testing challenge using your SQL skills. (🪙 100)",
-                points: 100,
-                completed: false,
-            }
-        ],
+        tasks: tasks.filter(t => t.level === 5),
         rewards: [
             'Badge: 📅 "SQL Explorer"',
             "🪙 200 pts"
@@ -266,38 +154,7 @@ const levelTexts: LevelSectionProps[] = [
             "Gain awareness of basic algorythmic tools.",
             "Understand the basics of writing scripts."
         ],
-        tasks: [
-            {
-                title: "🗣️ Introductory Talk",
-                text: "Suffer through me trying to teach you about for loops and stuff.  (🪙 tolko bodov na svete neexistuje, ale 100 I guess 😅😅)",
-                points: 100,
-                completed: false,
-            },
-            {
-                title: "🪢 Git basics",
-                text: "Get basic understanding of git - what it is, basic commands (pull, push, merge). (🪙 75)",
-                points: 75,
-                completed: false,
-            },
-            {
-                title: "🌐 Learn how websites are made",
-                text: "Go over basics of HTML. (🪙 75)",
-                points: 75,
-                completed: false,
-            },
-            {
-                title: "🛠️ Tool Exploration",
-                text: "Install VS Code and write a simple script. (🪙 50)",
-                points: 50,
-                completed: false,
-            },
-            {
-                title: "🏇 Mini Project",
-                text: "Write your name to a console letter by letter. (🪙 100)",
-                points: 100,
-                completed: false,
-            }
-        ],
+        tasks: tasks.filter(t => t.level === 6),
         rewards: [
             'Badge: 👩‍💻 "Programming Novice"',
             "🪙 400 pts"
@@ -323,26 +180,7 @@ const levelTexts: LevelSectionProps[] = [
             "Gain awareness of automation tools.",
             "Understand the basics of Selenium."
         ],
-        tasks: [
-            {
-                title: "📺 Introductory Video",
-                text: "Watch an introductory video on Selenium and Gherkin. (🪙 50)",
-                points: 50,
-                completed: false,
-            },
-            {
-                title: "🛠️ Tool Exploration",
-                text: "Install Selenium and run a simple test script. (🪙 50)",
-                points: 50,
-                completed: false,
-            },
-            {
-                title: "🏇 Mini Project",
-                text: "Write a basic script to automate a simple test case. (🪙 50)",
-                points: 50,
-                completed: false,
-            }
-        ],
+        tasks: tasks.filter(t => t.level === 7),
         rewards: [
             'Badge: 🏧 "Automation Beginner"',
             "🪙 200 pts"
@@ -368,26 +206,7 @@ const levelTexts: LevelSectionProps[] = [
             "Learn to use test management tools.",
             "Understand the role of these tools in organizing test cases and test cycles."
         ],
-        tasks: [
-            {
-                title: "📖 Read Guides",
-                text: "Read user guides for tools like TestRail. (🪙 50)",
-                points: 50,
-                completed: false,
-            },
-            {
-                title: "🛠️ Tool Setup",
-                text: "Set up a test project in TestRail or a similar tool. (🪙 50)",
-                points: 50,
-                completed: false,
-            },
-            {
-                title: "🏇 Project Simulation",
-                text: "Simulate a test cycle using the tool. (🪙 50)",
-                points: 50,
-                completed: false,
-            }
-        ],
+        tasks: tasks.filter(t => t.level === 8),
         rewards: [
             'Badge: 👩‍💼 "Test Manager"',
             "🪙 150 pts"
@@ -409,26 +228,7 @@ const levelTexts: LevelSectionProps[] = [
             "Enhance communication and teamwork skills.",
             "Develop critical thinking and adaptability."
         ],
-        tasks: [
-            {
-                title: "🗣️ Role-Playing",
-                text: "Participate in a role-playing session to simulate defect reporting. (🪙 50)",
-                points: 50,
-                completed: false,
-            },
-            {
-                title: "🎭 Group Project",
-                text: "Describe how you work in a team setting. (🪙 50)",
-                points: 50,
-                completed: false,
-            },
-            {
-                title: "📝 Feedback Session",
-                text: "Receive and provide feedback on test cases and reports. (🪙 50)",
-                points: 50,
-                completed: false,
-            }
-        ],
+        tasks: tasks.filter(t => t.level === 9),
         rewards: [
             'Badge: 👯 "Team Player"',
             "🪙 150 pts"
@@ -446,26 +246,7 @@ const levelTexts: LevelSectionProps[] = [
             "Apply all learned skills in a mock interview.",
             "Demonstrate proficiency in manual testing."
         ],
-        tasks: [
-            {
-                title: "🗣️ Capstone Project",
-                text: "Complete a full mock interview, including requirement analysis, test case writing, execution, defect reporting, and test management. (🪙 200)",
-                points: 200,
-                completed: false,
-            },
-            {
-                title: "🎞️ Presentation",
-                text: "Present yourself in the best light in a stressful situation. (🪙 150)",
-                points: 150,
-                completed: false,
-            },
-            {
-                title: "🤔 Reflection",
-                text: "Write a reflection on your learning journey and areas for improvement. (🪙 150)",
-                points: 150,
-                completed: false,
-            }
-        ],
+        tasks: tasks.filter(t => t.level === 10),
         rewards: [
             'Badge: 🥳 "Certified Interview-ready Manual Tester"',
             "🪙 500 pts",
