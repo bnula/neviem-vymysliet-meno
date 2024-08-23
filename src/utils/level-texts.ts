@@ -10,15 +10,21 @@ const levelTexts: LevelSectionProps[] = [
         tasks: [
             {
                 title: "👀 Read Articles",
-                text: "Complete three beginner articles on SDLC and STLC."
+                text: "Complete three beginner articles on SDLC and STLC.",
+                points: 20,
+                completed: false,
             },
             {
                 title: "📺 Watch Videos",
-                text: "Watch two YouTube tutorials on basic testing concepts."
+                text: "Watch two YouTube tutorials on basic testing concepts.",
+                points: 20,
+                completed: false,
             },
             {
                 title: "❔ Quiz",
-                text: "Pass a quiz with at least 80% score on the learned concepts."
+                text: "Pass a quiz with at least 80% score on the learned concepts.",
+                points: 20,
+                completed: false,
             }
         ],
         rewards: [
@@ -65,15 +71,21 @@ const levelTexts: LevelSectionProps[] = [
         tasks: [
             {
                 title: "📖 Read Boring Ass theory",
-                text: "Read on the theory of creating test cases. (🪙 40)"
+                text: "Read on the theory of creating test cases. (🪙 40)",
+                points: 40,
+                completed: false,
             },
             {
                 title: "✏️ Create a Few Test Cases",
-                text: "Write 5 test cases for a sample application. (🪙 40)"
+                text: "Write 5 test cases for a sample application. (🪙 40)",
+                points: 40,
+                completed: false,
             },
             {
                 title: "📝 Execute Test Cases",
-                text: "Execute your test cases and document the results. (🪙 40)"
+                text: "Execute your test cases and document the results. (🪙 40)",
+                points: 40,
+                completed: false,
             }
         ],
         rewards: [
@@ -104,15 +116,21 @@ const levelTexts: LevelSectionProps[] = [
         tasks: [
             {
                 title: "📖 Read Articles",
-                text: "Read articles on defect life cycle and defect reporting. (🪙 40)"
+                text: "Read articles on defect life cycle and defect reporting. (🪙 40)",
+                points: 40,
+                completed: false,
             },
             {
                 title: "🛠️ Tool Setup",
-                text: "Set up a bug tracking tool (e.g., JIRA) and report 3 sample defects. (🪙 40)"
+                text: "Set up a bug tracking tool (e.g., JIRA) and report 3 sample defects. (🪙 40)",
+                points: 40,
+                completed: false,
             },
             {
                 title: "🗣️ Role-Playing",
-                text: "Participate in a role-playing exercise to practice reporting and tracking defects. (🪙 40)"
+                text: "Participate in a role-playing exercise to practice reporting and tracking defects. (🪙 40)",
+                points: 40,
+                completed: false,
             }
         ],
         rewards: [
@@ -143,27 +161,39 @@ const levelTexts: LevelSectionProps[] = [
         tasks: [
             {
                 title: "📖 Read Articles",
-                text: "Read articles on the fundamentals of API testing. (🪙 40)"
+                text: "Read articles on the fundamentals of API testing. (🪙 40)",
+                points: 40,
+                completed: false,
             },
             {
                 title: "📺 Watch Tutorials",
-                text: "Watch video tutorials on using Postman for API testing. (🪙 40)"
+                text: "Watch video tutorials on using Postman for API testing. (🪙 40)",
+                points: 40,
+                completed: false,
             },
             {
                 title: "🛠️ Tool Setup",
-                text: "Install Postman and explore its interface. (🪙 40)"
+                text: "Install Postman and explore its interface. (🪙 40)",
+                points: 40,
+                completed: false,
             },
             {
                 title: "🖨️ Basic API Requests",
-                text: "Create and send basic GET and POST requests using Postman. (🪙 50)"
+                text: "Create and send basic GET and POST requests using Postman. (🪙 50)",
+                points: 40,
+                completed: false,
             },
             {
                 title: "🏇 API Testing Challenge",
-                text: "Perform testing on a sample API, including creating test cases for different endpoints. (🪙 50)"
+                text: "Perform testing on a sample API, including creating test cases for different endpoints. (🪙 50)",
+                points: 40,
+                completed: false,
             },
             {
                 title: "📃 Document Findings",
-                text: "Document your API testing process and findings. (🪙 40)"
+                text: "Document your API testing process and findings. (🪙 40)",
+                points: 40,
+                completed: false,
             }
         ],
         rewards: [
@@ -198,15 +228,21 @@ const levelTexts: LevelSectionProps[] = [
         tasks: [
             {
                 title: "📺 Watch Tutorials",
-                text: "Watch SQL tutorial for beginners. (🪙 40)"
+                text: "Watch SQL tutorial for beginners. (🪙 40)",
+                points: 40,
+                completed: false,
             },
             {
                 title: "📝 Practice Queries",
-                text: "Write and execute 5 basic SQL queries (e.g., SELECT, INSERT). (🪙 60)"
+                text: "Write and execute 5 basic SQL queries (e.g., SELECT, INSERT). (🪙 60)",
+                points: 60,
+                completed: false,
             },
             {
                 title: "🏇 Database Challenge",
-                text: "Complete a database testing challenge using your SQL skills. (🪙 100)"
+                text: "Complete a database testing challenge using your SQL skills. (🪙 100)",
+                points: 100,
+                completed: false,
             }
         ],
         rewards: [
@@ -233,23 +269,33 @@ const levelTexts: LevelSectionProps[] = [
         tasks: [
             {
                 title: "🗣️ Introductory Talk",
-                text: "Suffer through me trying to teach you about for loops and stuff.  (🪙 tolko bodov na svete neexistuje, ale 100 I guess 😅😅)"
+                text: "Suffer through me trying to teach you about for loops and stuff.  (🪙 tolko bodov na svete neexistuje, ale 100 I guess 😅😅)",
+                points: 100,
+                completed: false,
             },
             {
                 title: "🪢 Git basics",
-                text: "Get basic understanding of git - what it is, basic commands (pull, push, merge). (🪙 75)"
+                text: "Get basic understanding of git - what it is, basic commands (pull, push, merge). (🪙 75)",
+                points: 75,
+                completed: false,
             },
             {
                 title: "🌐 Learn how websites are made",
-                text: "Go over basics of HTML. (🪙 75)"
+                text: "Go over basics of HTML. (🪙 75)",
+                points: 75,
+                completed: false,
             },
             {
                 title: "🛠️ Tool Exploration",
-                text: "Install VS Code and write a simple script. (🪙 50)"
+                text: "Install VS Code and write a simple script. (🪙 50)",
+                points: 50,
+                completed: false,
             },
             {
                 title: "🏇 Mini Project",
-                text: "Write your name to a console letter by letter. (🪙 100)"
+                text: "Write your name to a console letter by letter. (🪙 100)",
+                points: 100,
+                completed: false,
             }
         ],
         rewards: [
@@ -280,15 +326,21 @@ const levelTexts: LevelSectionProps[] = [
         tasks: [
             {
                 title: "📺 Introductory Video",
-                text: "Watch an introductory video on Selenium and Gherkin. (🪙 50)"
+                text: "Watch an introductory video on Selenium and Gherkin. (🪙 50)",
+                points: 50,
+                completed: false,
             },
             {
                 title: "🛠️ Tool Exploration",
-                text: "Install Selenium and run a simple test script. (🪙 50)"
+                text: "Install Selenium and run a simple test script. (🪙 50)",
+                points: 50,
+                completed: false,
             },
             {
                 title: "🏇 Mini Project",
-                text: "Write a basic script to automate a simple test case. (🪙 50)"
+                text: "Write a basic script to automate a simple test case. (🪙 50)",
+                points: 50,
+                completed: false,
             }
         ],
         rewards: [
@@ -319,15 +371,21 @@ const levelTexts: LevelSectionProps[] = [
         tasks: [
             {
                 title: "📖 Read Guides",
-                text: "Read user guides for tools like TestRail. (🪙 50)"
+                text: "Read user guides for tools like TestRail. (🪙 50)",
+                points: 50,
+                completed: false,
             },
             {
                 title: "🛠️ Tool Setup",
-                text: "Set up a test project in TestRail or a similar tool. (🪙 50)"
+                text: "Set up a test project in TestRail or a similar tool. (🪙 50)",
+                points: 50,
+                completed: false,
             },
             {
                 title: "🏇 Project Simulation",
-                text: "Simulate a test cycle using the tool. (🪙 50)"
+                text: "Simulate a test cycle using the tool. (🪙 50)",
+                points: 50,
+                completed: false,
             }
         ],
         rewards: [
@@ -354,15 +412,21 @@ const levelTexts: LevelSectionProps[] = [
         tasks: [
             {
                 title: "🗣️ Role-Playing",
-                text: "Participate in a role-playing session to simulate defect reporting. (🪙 50)"
+                text: "Participate in a role-playing session to simulate defect reporting. (🪙 50)",
+                points: 50,
+                completed: false,
             },
             {
                 title: "🎭 Group Project",
-                text: "Describe how you work in a team setting. (🪙 50)"
+                text: "Describe how you work in a team setting. (🪙 50)",
+                points: 50,
+                completed: false,
             },
             {
                 title: "📝 Feedback Session",
-                text: "Receive and provide feedback on test cases and reports. (🪙 50)"
+                text: "Receive and provide feedback on test cases and reports. (🪙 50)",
+                points: 50,
+                completed: false,
             }
         ],
         rewards: [
@@ -385,15 +449,21 @@ const levelTexts: LevelSectionProps[] = [
         tasks: [
             {
                 title: "🗣️ Capstone Project",
-                text: "Complete a full mock interview, including requirement analysis, test case writing, execution, defect reporting, and test management. (🪙 200)"
+                text: "Complete a full mock interview, including requirement analysis, test case writing, execution, defect reporting, and test management. (🪙 200)",
+                points: 200,
+                completed: false,
             },
             {
                 title: "🎞️ Presentation",
-                text: "Present yourself in the best light in a stressful situation. (🪙 150)"
+                text: "Present yourself in the best light in a stressful situation. (🪙 150)",
+                points: 150,
+                completed: false,
             },
             {
                 title: "🤔 Reflection",
-                text: "Write a reflection on your learning journey and areas for improvement. (🪙 150)"
+                text: "Write a reflection on your learning journey and areas for improvement. (🪙 150)",
+                points: 150,
+                completed: false,
             }
         ],
         rewards: [
