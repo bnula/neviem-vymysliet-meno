@@ -28,7 +28,7 @@ export default function Page({ params }: { params: {id: string} }) {
             </ul>
             <ul className="list-disc list-inside">
                 {levelText.links.map((item, index) => (
-                    <li className="px-3" key={index}><a href={item.url} target="_blank">{item.text}</a></li>
+                    <li className="px-3" key={index}><a className="underline" href={item.url} target="_blank">{item.text}</a></li>
                 ))}
             </ul>
         </div>

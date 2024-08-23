@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { PowerIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import NavLinks from './nav-links';
 import PointsCounter from '../points-counter';
-// import { signOut } from '@/auth';
+import { signOut } from '@/auth';
 
 export default function SideNav() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,10 +49,11 @@ export default function SideNav() {
             <div className="h-auto w-full grow rounded-md bg-gray-50"></div>
 
             <form
-            // action ={async () => {
-            //     'use server';
-            //     await signOut();
-            // }}
+            action ={
+                async () => {
+                    await signOut();
+                }
+            }
             >
             <button className="flex h-[48px] w-full grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-teal-600 md:flex-none md:justify-start md:p-2 md:px-3">
                 <PowerIcon className="w-6" />
