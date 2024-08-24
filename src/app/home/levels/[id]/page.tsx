@@ -73,7 +73,7 @@ export default function Page({ params }: { params: {id: string} }) {
             <p><strong>Tasks:</strong></p>
             <ol className="list-decimal list-inside">
                 {tasks?.map((item, index) => (
-                    <TaskElem task={item} onTaskUpdate={handleTaskUpdate} />
+                    <TaskElem key={index} task={item} onTaskUpdate={handleTaskUpdate} />
                 ))}
             </ol>
             <p><strong>Rewards:</strong></p>
