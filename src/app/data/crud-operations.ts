@@ -9,13 +9,27 @@ export async function fetchTasks(level: number) {
         return data.rows;
     } catch (error) {
         console.error("Database Error:", error);
-        throw new Error("Failed to fetch task data.")
+        throw new Error("Failed to fetch task data.");
+    }
+}
+
+export async function updateTask(task: Task) {
+    try {
+        await sql`
+            UPDATE tasks
+            SET completed = ${task.completed}
+            WHERE level = ${task.level}
+            AND text = ${task.text}
+            AND title = ${task.title}
+        `;
+    } catch (error) {
+        console.error("Database Error:", error);
+        throw new Error("Failed to update task.");
     }
 }
 
 export async function fetchProgress(userId: string) {
     try {
-
         const data = await sql<Progress>`
         SELECT
             user_id as "userId",
@@ -28,6 +42,19 @@ export async function fetchProgress(userId: string) {
         return progDb;
     } catch (error) {
         console.error("Database Error:", error);
-        throw new Error("Failed to fetch progress data.")
+        throw new Error("Failed to fetch progress data.");
+    }
+}
+
+export async function updateProgress(progress: Progress) {
+    try {
+        await sql`
+            UPDATE progress
+            SET levels_completed = ${progress.levelsCompleted}, points = ${progress.points}
+            WHERE user_id = ${progress.userId}
+        `;
+    } catch (error) {
+        console.error("Database Error:", error);
+        throw new Error("Failed to update progress data.");
     }
 }
