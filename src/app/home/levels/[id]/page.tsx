@@ -1,9 +1,11 @@
 "use client";
 
-import { fetchProgress, fetchTasks, updateTask } from "@/app/data/crud-operations";
+import { fetchProgress, fetchTasks, updateProgress, updateTask } from "@/app/data/crud-operations";
 import levelTexts from "@/app/utils/level-texts";
 import { Progress } from "@/app/utils/types/progress";
 import { Task } from "@/app/utils/types/task";
+import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
 import { useEffect, useState } from "react";
 
 interface TaskElemProps {
@@ -20,7 +22,6 @@ const TaskElem: React.FC<TaskElemProps> = ({ task, onTaskUpdate }) => {
             console.error("Failed to update task:", error);
         }
     }
-
     if (task.completed === "true") {
         return (
             <li className="px-3" key={task.title}><strong>{task.title}</strong>: {task.text} <input type="checkbox" className="size-5" checked={true} disabled/></li>
@@ -56,9 +57,12 @@ export default function Page({ params }: { params: {id: string} }) {
     }, []);
 
     const handleTaskUpdate = async (updatedTask: Task) => {
+        updatedTask.completed = "true";
         await updateTask(updatedTask);
         progress!.points += updatedTask.points;
-        progress!.levelsCompleted ++;
+        progress!.levelsCompleted++;
+        await updateProgress(progress!);
+        redirect(`/home/levels/${updatedTask.level}`);
     }
 
     return (
