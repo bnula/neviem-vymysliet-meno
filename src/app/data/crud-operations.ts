@@ -1,3 +1,5 @@
+"use server";
+
 import { sql } from "@vercel/postgres";
 import { Task } from "../utils/types/task";
 import { Progress } from "../utils/types/progress";

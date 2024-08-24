@@ -3,5 +3,5 @@ export type Task = {
     title: string;
     text: string;
     points: number;
-    completed: boolean;
+    completed: string;
 }
