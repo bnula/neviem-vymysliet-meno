@@ -241,7 +241,7 @@ const levelTexts: LevelSectionProps[] = [
         ]
     },
     {
-        title: "Boss Level: Final Challenge",
+        title: "10 Boss Level: Final Challenge",
         objectives: [
             "Apply all learned skills in a mock interview.",
             "Demonstrate proficiency in manual testing."

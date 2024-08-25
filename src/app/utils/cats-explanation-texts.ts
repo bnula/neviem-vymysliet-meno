@@ -550,7 +550,7 @@ const catsExplanation: CatsExplanation[] = [
     },
     {
         level: 7,
-        content: `<p h2 class="text-2xl font-bold text-teal-600 mb-4">Indy and Grey are curious about making their testing work easier and faster. They discover that automation tools can help them with repetitive tasks, and they decide to learn how to use these tools, starting with the Robot Framework.</p>
+        content: `<h2 class="text-2xl font-bold text-teal-600 mb-4">Indy and Grey are curious about making their testing work easier and faster. They discover that automation tools can help them with repetitive tasks, and they decide to learn how to use these tools, starting with the Robot Framework.</h2>
 
         <ol class="list-decimal list-inside pl-4 space-y-8">
             <li>
@@ -609,70 +609,71 @@ const catsExplanation: CatsExplanation[] = [
     },
     {
         level: 8,
-        content: `<p>Now, Indy and Grey want to organize their testing activities and keep track of their progress using test management tools.</p>
-        <br>
-        <ol class="list-decimal list-inside">
+        content: `<h2 class="text-2xl font-bold text-teal-600 mb-4">Now, Indy and Grey want to organize their testing activities and keep track of their progress using test management tools.</h2>
+
+        <ol class="list-decimal list-inside pl-4 space-y-8">
             <li>
-                <p><strong>Understanding Test Management Tools:</strong></p>
-                <ul class="list-disc list-inside">
+                <p class="font-semibold text-lg">Understanding Test Management Tools:</p>
+                <ul class="list-disc list-inside pl-6 space-y-2">
                     <li>Imagine Indy and Grey have many different tests to run every day, like checking the food bowl, scratching post, and litter box. Keeping track of all these tests can be confusing.</li>
-                    <li><strong>Test Management Tools:</strong> These tools help them organize and manage all their test cases and track their progress.</li>
-                    <li><strong>Example:</strong> Tools like TestRail help them create test plans, run tests, and report results in a systematic way.</li>
+                    <li><span class="font-semibold">Test Management Tools:</span> These tools help them organize and manage all their test cases and track their progress.</li>
+                    <li><span class="font-semibold">Example:</span> Tools like TestRail help them create test plans, run tests, and report results in a systematic way.</li>
                 </ul>
             </li>
-            <br>
+
             <li>
-                <p><strong>Reading User Guides:</strong></p>
-                <ul class="list-disc list-inside">
+                <p class="font-semibold text-lg">Reading User Guides:</p>
+                <ul class="list-disc list-inside pl-6 space-y-2">
                     <li>Indy and Grey read guides to understand how to use TestRail.</li>
-                    <li><strong>User Guide Example:</strong>They learn about key features like:<ul class="list-disc list-inside">
-                            <li><strong>Creating Test Cases:</strong> Writing detailed test cases for each task.</li>
-                            <li><strong>Test Runs:</strong> Organizing test cases into test runs for execution.</li>
-                            <li><strong>Reporting:</strong> Generating reports to see which tests passed or failed.</li>
+                    <li><span class="font-semibold">User Guide Example:</span> They learn about key features like:
+                        <ul class="list-disc list-inside pl-6 space-y-2">
+                            <li><span class="font-semibold">Creating Test Cases:</span> Writing detailed test cases for each task.</li>
+                            <li><span class="font-semibold">Test Runs:</span> Organizing test cases into test runs for execution.</li>
+                            <li><span class="font-semibold">Reporting:</span> Generating reports to see which tests passed or failed.</li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <br>
+
             <li>
-                <p><strong>Setting Up a Test Project:</strong></p>
-                <ul class="list-disc list-inside">
+                <p class="font-semibold text-lg">Setting Up a Test Project:</p>
+                <ul class="list-disc list-inside pl-6 space-y-2">
                     <li>Indy and Grey set up a test project in TestRail.</li>
-                    <li><strong>Project Setup:</strong>
-                        <ul class="list-disc list-inside">
-                            <li><strong>Creating a Project:</strong> They create a new project called &quot;Cat House Tests.&quot;</li>
-                            <li><strong>Adding Test Cases:</strong> They add test cases for different tasks like checking the food bowl, scratching post, and litter box.</li>
-                            <li><strong>Test Suite:</strong> They organize test cases into a test suite, a collection of related test cases.</li>
+                    <li><span class="font-semibold">Project Setup:</span>
+                        <ul class="list-disc list-inside pl-6 space-y-2">
+                            <li><span class="font-semibold">Creating a Project:</span> They create a new project called "Cat House Tests."</li>
+                            <li><span class="font-semibold">Adding Test Cases:</span> They add test cases for different tasks like checking the food bowl, scratching post, and litter box.</li>
+                            <li><span class="font-semibold">Test Suite:</span> They organize test cases into a test suite, a collection of related test cases.</li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <br>
+
             <li>
-                <p><strong>Simulating a Test Cycle:</strong></p>
-                <ul class="list-disc list-inside">
+                <p class="font-semibold text-lg">Simulating a Test Cycle:</p>
+                <ul class="list-disc list-inside pl-6 space-y-2">
                     <li>Indy and Grey simulate a test cycle to see how their tests are managed.</li>
-                    <li><strong>Test Cycle Simulation:</strong>
-                        <ul class="list-disc list-inside">
-                            <li><strong>Creating a Test Run:</strong> They create a test run for the daily checks.</li>
-                            <li><strong>Executing Tests:</strong> They follow the steps in each test case and mark the results (pass or fail).</li>
-                            <li><strong>Logging Results:</strong> They log the results in TestRail, noting any issues or defects they find.</li>
-                            <li><strong>Generating Reports:</strong> They generate a report to see the overall test results and identify areas that need improvement.</li>
+                    <li><span class="font-semibold">Test Cycle Simulation:</span>
+                        <ul class="list-disc list-inside pl-6 space-y-2">
+                            <li><span class="font-semibold">Creating a Test Run:</span> They create a test run for the daily checks.</li>
+                            <li><span class="font-semibold">Executing Tests:</span> They follow the steps in each test case and mark the results (pass or fail).</li>
+                            <li><span class="font-semibold">Logging Results:</span> They log the results in TestRail, noting any issues or defects they find.</li>
+                            <li><span class="font-semibold">Generating Reports:</span> They generate a report to see the overall test results and identify areas that need improvement.</li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <br>
+
             <li>
-                <p><strong>Documenting Findings:</strong></p>
-                <ul class="list-disc list-inside">
+                <p class="font-semibold text-lg">Documenting Findings:</p>
+                <ul class="list-disc list-inside pl-6 space-y-2">
                     <li>Indy and Grey document their experience with test management tools.</li>
-                    <li><strong>Documentation:</strong>
-                        <ul class="list-disc list-inside">
-                            <li><strong>Test Cases:</strong> List of all test cases they created.</li>
-                            <li><strong>Test Run Results:</strong> Details of each test run and the results.</li>
-                            <li><strong>Reports:</strong> Summary reports showing which tests passed or failed.</li>
-                            <li><strong>Challenges Faced:</strong> Any difficulties they encountered and how they resolved them.</li>
+                    <li><span class="font-semibold">Documentation:</span>
+                        <ul class="list-disc list-inside pl-6 space-y-2">
+                            <li><span class="font-semibold">Test Cases:</span> List of all test cases they created.</li>
+                            <li><span class="font-semibold">Test Run Results:</span> Details of each test run and the results.</li>
+                            <li><span class="font-semibold">Reports:</span> Summary reports showing which tests passed or failed.</li>
+                            <li><span class="font-semibold">Challenges Faced:</span> Any difficulties they encountered and how they resolved them.</li>
                         </ul>
                     </li>
                 </ul>
@@ -681,75 +682,75 @@ const catsExplanation: CatsExplanation[] = [
     },
     {
         level: 9,
-        content: `<p>Indy and Grey now want to learn how to communicate better and work as a team to make their cat house testing activities more effective.</p>
-        <br>
-        <ol class="list-decimal list-inside">
+        content: `<h2 class="text-2xl font-bold text-teal-600 mb-4">Indy and Grey now want to learn how to communicate better and work as a team to make their cat house testing activities more effective.</h2>
+
+        <ol class="list-decimal list-inside pl-4 space-y-8">
             <li>
-                <p><strong>Role-Playing for Defect Reporting:</strong></p>
-                <ul class="list-disc list-inside">
+                <p class="font-semibold text-lg">Role-Playing for Defect Reporting:</p>
+                <ul class="list-disc list-inside pl-6 space-y-2">
                     <li>Imagine Indy finds a problem with the food bowl. Instead of just telling Grey, he practices describing the problem clearly and politely.</li>
-                    <li><strong>Role-Playing Exercise:</strong>
-                        <ul class="list-disc list-inside">
-                            <li><strong>Scenario:</strong> Indy reports a defect where the food bowl isn&rsquo;t filling up correctly.</li>
-                            <li><strong>Steps:</strong>
-                                <ul class="list-disc list-inside">
-                                    <li><strong>Describe the Problem:</strong> Indy explains what went wrong, &ldquo;The food bowl isn&rsquo;t refilling when we press the button.&rdquo;</li>
-                                    <li><strong>Provide Details:</strong> Indy includes details like when the problem happened and any steps that led to the issue.</li>
-                                    <li><strong>Propose a Solution:</strong> Indy suggests checking if the button is stuck or if the food dispenser is broken.</li>
+                    <li><span class="font-semibold">Role-Playing Exercise:</span>
+                        <ul class="list-disc list-inside pl-6 space-y-2">
+                            <li><span class="font-semibold">Scenario:</span> Indy reports a defect where the food bowl isn’t filling up correctly.</li>
+                            <li><span class="font-semibold">Steps:</span>
+                                <ul class="list-disc list-inside pl-6 space-y-2">
+                                    <li><span class="font-semibold">Describe the Problem:</span> Indy explains what went wrong, “The food bowl isn’t refilling when we press the button.”</li>
+                                    <li><span class="font-semibold">Provide Details:</span> Indy includes details like when the problem happened and any steps that led to the issue.</li>
+                                    <li><span class="font-semibold">Propose a Solution:</span> Indy suggests checking if the button is stuck or if the food dispenser is broken.</li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <br>
+
             <li>
-                <p><strong>Group Project - Teamwork Description:</strong></p>
-                <ul class="list-disc list-inside">
+                <p class="font-semibold text-lg">Group Project - Teamwork Description:</p>
+                <ul class="list-disc list-inside pl-6 space-y-2">
                     <li>Indy and Grey work together to describe how they would handle a project.</li>
-                    <li><strong>Group Project Example:</strong>
-                        <ul class="list-disc list-inside">
-                            <li><strong>Project:</strong> Organizing a new play area for the cat house.</li>
-                            <li><strong>Steps:</strong>
-                                <ul class="list-disc list-inside">
-                                    <li><strong>Roles:</strong> Indy and Grey assign roles, like who will design the play area and who will gather materials.</li>
-                                    <li><strong>Planning:</strong> They plan how they will work together, communicate updates, and handle any problems that arise.</li>
-                                    <li><strong>Execution:</strong> They follow their plan, keeping in touch and helping each other as needed.</li>
+                    <li><span class="font-semibold">Group Project Example:</span>
+                        <ul class="list-disc list-inside pl-6 space-y-2">
+                            <li><span class="font-semibold">Project:</span> Organizing a new play area for the cat house.</li>
+                            <li><span class="font-semibold">Steps:</span>
+                                <ul class="list-disc list-inside pl-6 space-y-2">
+                                    <li><span class="font-semibold">Roles:</span> Indy and Grey assign roles, like who will design the play area and who will gather materials.</li>
+                                    <li><span class="font-semibold">Planning:</span> They plan how they will work together, communicate updates, and handle any problems that arise.</li>
+                                    <li><span class="font-semibold">Execution:</span> They follow their plan, keeping in touch and helping each other as needed.</li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <br>
+
             <li>
-                <p><strong>Feedback Session:</strong></p>
-                <ul class="list-disc list-inside">
+                <p class="font-semibold text-lg">Feedback Session:</p>
+                <ul class="list-disc list-inside pl-6 space-y-2">
                     <li>Indy and Grey practice giving and receiving feedback on their test cases and reports.</li>
-                    <li><strong>Feedback Example:</strong>
-                        <ul class="list-disc list-inside">
-                            <li><strong>Receiving Feedback:</strong> Indy receives feedback from Grey on a test case he wrote, &ldquo;The test case was clear, but you should add more details about the expected result.&rdquo;</li>
-                            <li><strong>Providing Feedback:</strong> Grey provides feedback to Indy on a report, &ldquo;Your report is good, but it would be better with more explanation of the issues found.&rdquo;</li>
+                    <li><span class="font-semibold">Feedback Example:</span>
+                        <ul class="list-disc list-inside pl-6 space-y-2">
+                            <li><span class="font-semibold">Receiving Feedback:</span> Indy receives feedback from Grey on a test case he wrote, “The test case was clear, but you should add more details about the expected result.”</li>
+                            <li><span class="font-semibold">Providing Feedback:</span> Grey provides feedback to Indy on a report, “Your report is good, but it would be better with more explanation of the issues found.”</li>
                         </ul>
                     </li>
-                    <li><strong>Constructive Feedback:</strong>
-                        <ul class="list-disc list-inside">
-                            <li><strong>Be Specific:</strong> Focus on specific areas for improvement, like adding details or clarifying steps.</li>
-                            <li><strong>Be Respectful:</strong> Offer feedback in a friendly and supportive way to help the other person improve.</li>
+                    <li><span class="font-semibold">Constructive Feedback:</span>
+                        <ul class="list-disc list-inside pl-6 space-y-2">
+                            <li><span class="font-semibold">Be Specific:</span> Focus on specific areas for improvement, like adding details or clarifying steps.</li>
+                            <li><span class="font-semibold">Be Respectful:</span> Offer feedback in a friendly and supportive way to help the other person improve.</li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <br>
+
             <li>
-                <p><strong>Documenting Findings:</strong></p>
-                <ul class="list-disc list-inside">
+                <p class="font-semibold text-lg">Documenting Findings:</p>
+                <ul class="list-disc list-inside pl-6 space-y-2">
                     <li>Indy and Grey document their experiences in improving their behavioral and soft skills.</li>
-                    <li><strong>Documentation:</strong>
-                        <ul class="list-disc list-inside">
-                            <li><strong>Role-Playing Scenarios:</strong> List of scenarios they practiced and any feedback received.</li>
-                            <li><strong>Teamwork Experiences:</strong> Examples of how they worked together on the group project.</li>
-                            <li><strong>Feedback Notes:</strong> Notes on feedback received and given, including any improvements made.</li>
+                    <li><span class="font-semibold">Documentation:</span>
+                        <ul class="list-disc list-inside pl-6 space-y-2">
+                            <li><span class="font-semibold">Role-Playing Scenarios:</span> List of scenarios they practiced and any feedback received.</li>
+                            <li><span class="font-semibold">Teamwork Experiences:</span> Examples of how they worked together on the group project.</li>
+                            <li><span class="font-semibold">Feedback Notes:</span> Notes on feedback received and given, including any improvements made.</li>
                         </ul>
                     </li>
                 </ul>
@@ -758,8 +759,8 @@ const catsExplanation: CatsExplanation[] = [
     },
     {
         level: 10,
-        content: `<h2>Indy and Grey are saying:</h2>
-            <h1>To d&aacute;&scaron; mamiiiiiii ❤️ mňau</h1>`
+        content: `<h2 class="text-2xl font-bold text-teal-600 mb-4">Indy and Grey are saying:</h2>
+        <h1 class="text-4xl font-bold text-red-600 mb-2">To dáš mamiiiiiii ❤️ mňau</h1>`
     }
 ]
 
