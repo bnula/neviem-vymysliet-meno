@@ -40,7 +40,7 @@ export default function GetProgress() {
             You have <strong className="text-teal-500">{progress.points}</strong> points.
             </p>
             <p className="text-xl mb-8">
-            You've completed <strong className="text-teal-500">{progress.levelsCompleted}</strong> tasks out of <strong className="text-teal-500">{progress.maxLevel}</strong>.
+            You have completed <strong className="text-teal-500">{progress.levelsCompleted}</strong> tasks out of <strong className="text-teal-500">{progress.maxLevel}</strong>.
             </p>
         </div>
         </div>
