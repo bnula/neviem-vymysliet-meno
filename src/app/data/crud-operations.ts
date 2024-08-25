@@ -3,6 +3,7 @@
 import { sql } from "@vercel/postgres";
 import { Task } from "../utils/types/task";
 import { Progress } from "../utils/types/progress";
+import { VocabularyEntry } from "../utils/types/vocabulary-entry";
 
 export async function fetchTasks(level: number) {
     try {
@@ -58,5 +59,24 @@ export async function updateProgress(progress: Progress) {
     } catch (error) {
         console.error("Database Error:", error);
         throw new Error("Failed to update progress data.");
+    }
+}
+
+export async function fetchVocabulary() {
+    try {
+        const vocab = await sql<VocabularyEntry>`SELECT * FROM vocabulary`;
+        return vocab.rows;
+    } catch (error) {
+        console.error("Database Error:", error);
+        throw new Error("Failed to fetch vocabulary data.");
+    }
+}
+
+export async function addVocabularyWord(word: VocabularyEntry) {
+    try {
+        await sql`INSERT INTO vocabulary (czech, english) VALUES (${word.czech}, ${word.english})`
+    } catch (error) {
+        console.error("Database Error:", error);
+        throw new Error("Failed to add vocabulary entry.");
     }
 }

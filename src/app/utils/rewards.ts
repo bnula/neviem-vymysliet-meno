@@ -39,7 +39,7 @@ export const levelRewards: Reward[] = [
     },
     {
         title: "⭐ Level 10 ⭐",
-        description: "netuším :D"
+        description: "Lžičkaaaaa 🥄"
     },
     {
         title: "⭐ Final Level ⭐",

@@ -4,7 +4,6 @@ import { fetchProgress, fetchTasks, updateProgress, updateTask } from "@/app/dat
 import levelTexts from "@/app/utils/level-texts";
 import { Progress } from "@/app/utils/types/progress";
 import { Task } from "@/app/utils/types/task";
-import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { useEffect, useState } from "react";
 

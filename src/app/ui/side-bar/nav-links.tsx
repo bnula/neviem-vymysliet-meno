@@ -64,6 +64,30 @@ export default function NavLinks() {
         >
             <p className="md:block">Lol slovnicek</p>
         </Link>
+        <Link
+            key="Vocabulary"
+            href={`/home/vocabulary`}
+            className={clsx(
+            'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-teal-50 p-3 text-sm font-medium hover:bg-teal-100 hover:text-teal-600 md:flex-none md:justify-start md:p-2 md:px-3',
+            {
+                'bg-sky-100 text-teal-600': pathname === `/home/vocabulary`,
+            },
+            )}
+        >
+            <p className="md:block">Vocabulary</p>
+        </Link>
+        <Link
+            key="VocabCheck"
+            href={`/home/vocabulary/check`}
+            className={clsx(
+            'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-teal-50 p-3 text-sm font-medium hover:bg-teal-100 hover:text-teal-600 md:flex-none md:justify-start md:p-2 md:px-3',
+            {
+                'bg-sky-100 text-teal-600': pathname === `/home/vocabulary/check`,
+            },
+            )}
+        >
+            <p className="md:block">Vocabulary Check</p>
+        </Link>
         </>
     );
 }
