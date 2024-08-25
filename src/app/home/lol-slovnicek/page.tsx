@@ -16,7 +16,7 @@ export default function Page() {
             <h1 className="text-3xl font-bold text-teal-600 mb-6">Lol Slovníček</h1>
             <ul className="list-disc list-inside text-gray-700 text-lg">
                 {lolVyznamy.map((text, index) => (
-                    <li key={index} className="mb-2">{text}</li>
+                    <li key={index} className="mb-2 text-slate-300">{text}</li>
                 ))}
             </ul>
         </div>

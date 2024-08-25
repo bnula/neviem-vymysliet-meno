@@ -47,7 +47,7 @@ export default function Page() {
     };
 
     return (
-        <div className="max-w-2xl mx-auto p-8 bg-slate-400 rounded-lg shadow-md">
+        <div className="max-w-2xl mx-auto p-8 bg-slate-700 rounded-lg shadow-md">
             <h1 className="text-3xl font-bold text-teal-600 mb-6">Translation Form</h1>
             <form className="grid grid-cols-1 gap-6 sm:grid-cols-6 pb-6" onSubmit={handleSave}>
                 <div className="col-span-3">
@@ -88,7 +88,7 @@ export default function Page() {
                     <button
                         type="button"
                         onClick={handleOpenDeepL}
-                        className="w-1/2 bg-slate-500 text-teal-600 py-2 px-4 rounded-lg border border-teal-600 hover:bg-teal-600 hover:text-white transition-colors shadow-md"
+                        className="w-1/2 bg-slate-200 text-teal-600 py-2 px-4 rounded-lg border border-teal-600 hover:bg-teal-600 hover:text-white transition-colors shadow-md"
                     >
                         Translate in DeepL
                     </button>
@@ -99,15 +99,15 @@ export default function Page() {
                 <table className="table-auto w-full text-left border border-slate-500">
                     <thead>
                         <tr>
-                            <th className="px-4 py-2 border border-slate-600 text-teal-600">English</th>
-                            <th className="px-4 py-2 border border-slate-600 text-teal-600">Czech</th>
+                            <th className="px-4 py-2 border border-slate-200 text-teal-600">English</th>
+                            <th className="px-4 py-2 border border-slate-200 text-teal-600">Czech</th>
                         </tr>
                     </thead>
                     <tbody>
                         {words?.map((item, index) => (
                             <tr key={index}>
-                                <td className="px-4 py-2 border border-slate-700">{item.english}</td>
-                                <td className="px-4 py-2 border border-slate-700">{item.czech}</td>
+                                <td className="px-4 py-2 border border-slate-200">{item.english}</td>
+                                <td className="px-4 py-2 border border-slate-200">{item.czech}</td>
                             </tr>
                         ))}
                     </tbody>

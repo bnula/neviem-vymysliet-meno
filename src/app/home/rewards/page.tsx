@@ -8,9 +8,9 @@ export default function Page() {
             <div className="mb-8">
                 <h2 className="text-2xl font-semibold text-teal-600 mb-4">Level Rewards</h2>
                 {levelRewards.map((item, index) => (
-                    <div key={index} className="mb-4 p-4 bg-black-50 rounded-lg shadow-md">
-                        <h3 className="text-lg font-semibold text-gray-700 mb-2">{item.title}</h3>
-                        <p className="text-gray-600">{item.description}</p>
+                    <div key={index} className="mb-4 p-4 bg-black-50 rounded-lg shadow-md bg-slate-700">
+                        <h3 className="text-lg font-semibold text-gray-400 mb-2">{item.title}</h3>
+                        <p className="text-gray-200">{item.description}</p>
                     </div>
                 ))}
             </div>
@@ -19,8 +19,8 @@ export default function Page() {
                 <h2 className="text-2xl font-semibold text-teal-600 mb-4">Point Rewards</h2>
                 {pointRewards.map((item, index) => (
                     <div key={index} className="mb-4 p-4 bg-black-50 rounded-lg shadow-md">
-                        <h3 className="text-lg font-semibold text-gray-700 mb-2">{item.title}</h3>
-                        <p className="text-gray-600">{item.description}</p>
+                        <h3 className="text-lg font-semibold text-gray-400 mb-2">{item.title}</h3>
+                        <p className="text-gray-200">{item.description}</p>
                     </div>
                 ))}
             </div>

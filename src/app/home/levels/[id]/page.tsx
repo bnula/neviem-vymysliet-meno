@@ -22,7 +22,7 @@ const TaskElem: React.FC<TaskElemProps> = ({ task, onTaskUpdate }) => {
     };
 
     return (
-        <li className="px-4 py-2 bg-white rounded-lg shadow-md mb-4 flex justify-between items-center">
+        <li className="px-4 py-2 bg-slate-400 rounded-lg shadow-md mb-4 flex justify-between items-center">
             <span className={`font-semibold ${task.completed === "true" ? "line-through text-gray-400" : ""}`}>
                 {task.title}: {task.text}
             </span>
@@ -70,7 +70,7 @@ export default function Page({ params }: { params: { id: string } }) {
 
     return (
         <div className="min-h-screen bg-gradient-to-r from-teal-400 to-blue-500 flex flex-col items-center justify-center text-white">
-            <div className="bg-white text-black rounded-lg shadow-lg p-8 max-w-3xl w-full text-center">
+            <div className="bg-slate-300 text-black rounded-lg shadow-lg p-8 max-w-3xl w-full text-center">
                 <h1 className="font-bold text-4xl text-teal-600 mb-6">{levelText.title}</h1>
                 
                 <div className="text-left">
