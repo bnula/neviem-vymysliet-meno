@@ -23,7 +23,7 @@ const TaskElem: React.FC<TaskElemProps> = ({ task, onTaskUpdate }) => {
 
     return (
         <li className="px-4 py-2 bg-slate-400 rounded-lg shadow-md mb-4 flex justify-between items-center">
-            <span className={`font-semibold ${task.completed === "true" ? "line-through text-gray-400" : ""}`}>
+            <span className={`font-semibold ${task.completed === "true" ? "line-through text-black" : ""}`}>
                 {task.title}: {task.text}
             </span>
             <input
