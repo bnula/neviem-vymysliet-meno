@@ -60,7 +60,7 @@ export default function Page() {
                         type="text"
                         value={english}
                         onChange={(e) => setEnglish(e.target.value)}
-                        className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:ring-teal-600 focus:border-teal-600"
+                        className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:ring-teal-600 focus:border-teal-600 text-black"
                     />
                 </div>
 
@@ -74,7 +74,7 @@ export default function Page() {
                         type="text"
                         value={czech}
                         onChange={(e) => setCzech(e.target.value)}
-                        className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:ring-teal-600 focus:border-teal-600"
+                        className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:ring-teal-600 focus:border-teal-600 text-black"
                     />
                 </div>
 
