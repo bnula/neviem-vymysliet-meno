@@ -4,6 +4,7 @@ import { sql } from "@vercel/postgres";
 import { Task } from "../utils/types/task";
 import { Progress } from "../utils/types/progress";
 import { VocabularyEntry } from "../utils/types/vocabulary-entry";
+import { Position } from "../utils/types/position";
 
 export async function fetchTasks(level: number) {
     try {
@@ -78,5 +79,26 @@ export async function addVocabularyWord(word: VocabularyEntry) {
     } catch (error) {
         console.error("Database Error:", error);
         throw new Error("Failed to add vocabulary entry.");
+    }
+}
+
+export async function fetchPositions() {
+    try {
+        const positions = (await sql`SELECT * FROM positions INNER JOIN links ON positions.link_id = links.id`).rows;
+        return positions;
+    } catch (error) {
+        console.error("Database Error:", error);
+        throw new Error("Failed to fetch positions");
+    }
+}
+
+export async function addPosition(position: Position) {
+    try {
+        await sql`INSERT INTO links (text, url) VALLUES (${position.link.text}, ${position.link.url})`;
+        const link = (await sql`SELECT * FROM links WHERE text = ${position.link.text} AND url = ${position.link.url}`).rows[0];
+        await sql`INSERT INTO positions (description, link_id) VALUES (${position.description}, ${link.id})`;
+    } catch (error) {
+        console.error("Database Error", error);
+        throw new Error("Failed to add position");
     }
 }
