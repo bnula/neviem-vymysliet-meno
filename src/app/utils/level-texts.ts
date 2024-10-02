@@ -65,6 +65,10 @@ const levelTexts: LevelSectionProps[] = [
                 text: "🌐 Practice Site"
             },
             {
+                url: "https://ucime-sa-veci.atlassian.net/jira/software/projects/TP/boards/2",
+                text: "👾 Jira practice site"
+            },
+            {
                 url: "/home/decka/2",
                 text: "🐈‍⬛🐈"
             }
@@ -89,6 +93,10 @@ const levelTexts: LevelSectionProps[] = [
             {
                 url: "https://www.bandicam.com/downloads/",
                 text: "🛠️ Bandicam Screen Recorder"
+            },
+            {
+                url: "https://ucime-sa-veci.atlassian.net/jira/software/projects/TP/boards/2",
+                text: "👾 Jira practice site"
             },
             {
                 url: "/home/decka/3",
