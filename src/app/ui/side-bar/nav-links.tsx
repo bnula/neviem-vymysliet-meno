@@ -65,8 +65,9 @@ export default function NavLinks() {
             <p className="md:block">Rewards</p>
         </Link>
         <Link
-            key="Positions"
-            href={`/home/positions`}
+            key="Google Drive"
+            href={`https://drive.google.com/drive/folders/15WtyfWblU5PFKwZy82pbw6RI1dHxPFEe?usp=sharing`}
+            target='_blank'
             className={clsx(
             'flex h-[40px] grow items-center justify-center gap-2 rounded-md bg-teal-50 p-3 text-sm font-medium hover:bg-teal-100 hover:text-teal-600 md:flex-none md:justify-start md:p-2 md:px-3',
             {
@@ -74,7 +75,7 @@ export default function NavLinks() {
             },
             )}
         >
-            <p className="md:block">Positions</p>
+            <p className="md:block">Google Drive</p>
         </Link>
         <Link
             key="LolSlovnicek"
