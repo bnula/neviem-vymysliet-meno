@@ -173,6 +173,10 @@ const levelTexts: LevelSectionProps[] = [
                 text: "📋 Command Line Introduction"
             },
             {
+                url: "https://imgv2-1-f.scribdassets.com/img/document/265250372/original/540a9ac768/1590308961?v=1",
+                text: "🃏 CLI cheatsheet"
+            },
+            {
                 url: "https://www.w3schools.com/git/default.asp",
                 text: "✏️ Git Tutorial"
             },
