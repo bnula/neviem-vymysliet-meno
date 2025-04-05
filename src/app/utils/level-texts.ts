@@ -169,8 +169,16 @@ const levelTexts: LevelSectionProps[] = [
         ],
         links: [
             {
+                url: "https://www.makeuseof.com/tag/a-beginners-guide-to-the-windows-command-line/",
+                text: "📋 Command Line Introduction"
+            },
+            {
                 url: "https://www.w3schools.com/git/default.asp",
                 text: "✏️ Git Tutorial"
+            },
+            {
+                url: "https://www.youtube.com/watch?v=mJ-qvsxPHpY&ab_channel=NickWhite",
+                text: "🎦 Git Video Tutorial"
             },
             {
                 url: "https://www.w3schools.com/html/html_intro.asp",
