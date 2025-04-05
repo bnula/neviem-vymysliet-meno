@@ -185,6 +185,14 @@ const levelTexts: LevelSectionProps[] = [
                 text: "✏️ HTML Introduction"
             },
             {
+                url: "https://www.w3schools.com/Css/css_intro.asp",
+                text: "🎨 Introduction to CSS"
+            },
+            {
+                url: "https://www.youtube.com/watch?v=1PnVor36_40&ab_channel=WebDevSimplified",
+                text: "🎥 CSS video tutorial"
+            },
+            {
                 url: "/home/decka/6",
                 text: "🐈‍⬛🐈"
             }
