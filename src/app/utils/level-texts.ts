@@ -227,6 +227,10 @@ const levelTexts: LevelSectionProps[] = [
                 text: "Intro to Gherkin | How To Write A Test In Gherkin"
             },
             {
+                url: "https://auto-test-app-kappa.vercel.app/",
+                text: "🤖 Automation Test Site"
+            },
+            {
                 url: "/home/decka/7",
                 text: "🐈‍⬛🐈"
             }
