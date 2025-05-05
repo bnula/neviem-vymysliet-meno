@@ -193,6 +193,10 @@ const levelTexts: LevelSectionProps[] = [
                 text: "✏️ HTML Introduction"
             },
             {
+                url: "https://www.youtube.com/watch?v=it1rTvBcfRg&list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s&ab_channel=w3schools.com",
+                text: "📹 HTML tutorial playlist"
+            },
+            {
                 url: "https://www.w3schools.com/Css/css_intro.asp",
                 text: "🎨 Introduction to CSS"
             },
