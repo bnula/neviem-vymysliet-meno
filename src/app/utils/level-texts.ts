@@ -189,6 +189,10 @@ const levelTexts: LevelSectionProps[] = [
                 text: "📎 Git exercise"
             },
             {
+                url: "https://i.etsystatic.com/42159906/r/il/67295b/4829654914/il_1140xN.4829654914_evqb.jpg",
+                text: "🃏 Git cheatsheet"
+            },
+            {
                 url: "https://www.w3schools.com/html/html_intro.asp",
                 text: "✏️ HTML Introduction"
             },

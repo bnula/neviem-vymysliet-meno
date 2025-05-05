@@ -57,7 +57,7 @@ export default function Page({ params }: { params: { id: string } }) {
 
         getTasks();
         getProgress();
-    }, []);
+    }, [id]);
 
     const handleTaskUpdate = async (updatedTask: Task) => {
         updatedTask.completed = "true";
