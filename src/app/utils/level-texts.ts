@@ -211,12 +211,38 @@ const levelTexts: LevelSectionProps[] = [
         ]
     },
     {
-        title: "Level 7: Basic Automation Awareness",
+        title: "Level 7: Javascript Basics",
+        objectives: [
+            "Gain foundational knowledge of Javascript.",
+            "Understand the basics of writing scripts."
+        ],
+        tasks: tasks.filter(t => t.level === 7),
+        rewards: [
+            'Badge: 👩‍💻 "Javascript Novice"',
+            "🪙 400 pts"
+        ],
+        links: [
+            {
+                url: "https://www.programiz.com/javascript/online-compiler/",
+                text: "💻 Online editor"
+            },
+            {
+                url: "https://www.tutorialrepublic.com/javascript-tutorial/javascript-syntax.php",
+                text: "📜 JS Tutorial (+ zvysok toho tutorialu, mozes vynechat JS introduction, getting started a events)"
+            },
+            {
+                url: "https://www.guru99.com/node-js-tutorial.html",
+                text: "📜 Node.js Tutorial (prve 3 lekcie by mali stacit)"
+            }
+        ]
+    },
+    {
+        title: "Level 8: Basic Automation Awareness",
         objectives: [
             "Gain awareness of automation tools.",
             "Understand the basics of Selenium."
         ],
-        tasks: tasks.filter(t => t.level === 7),
+        tasks: tasks.filter(t => t.level === 8),
         rewards: [
             'Badge: 🏧 "Automation Beginner"',
             "🪙 200 pts"
@@ -241,12 +267,12 @@ const levelTexts: LevelSectionProps[] = [
         ]
     },
     {
-        title: "Level 8: Test Management Tools",
+        title: "Level 9: Test Management Tools",
         objectives: [
             "Learn to use test management tools.",
             "Understand the role of these tools in organizing test cases and test cycles."
         ],
-        tasks: tasks.filter(t => t.level === 8),
+        tasks: tasks.filter(t => t.level === 9),
         rewards: [
             'Badge: 👩‍💼 "Test Manager"',
             "🪙 150 pts"
@@ -263,12 +289,12 @@ const levelTexts: LevelSectionProps[] = [
         ]
     },
     {
-        title: "Level 9: Behavioral and Soft Skills",
+        title: "Level 10: Behavioral and Soft Skills",
         objectives: [
             "Enhance communication and teamwork skills.",
             "Develop critical thinking and adaptability."
         ],
-        tasks: tasks.filter(t => t.level === 9),
+        tasks: tasks.filter(t => t.level === 10),
         rewards: [
             'Badge: 👯 "Team Player"',
             "🪙 150 pts"
@@ -281,12 +307,12 @@ const levelTexts: LevelSectionProps[] = [
         ]
     },
     {
-        title: "10 Boss Level: Final Challenge",
+        title: "11 Boss Level: Final Challenge",
         objectives: [
             "Apply all learned skills in a mock interview.",
             "Demonstrate proficiency in manual testing."
         ],
-        tasks: tasks.filter(t => t.level === 10),
+        tasks: tasks.filter(t => t.level === 11),
         rewards: [
             'Badge: 🥳 "Certified Interview-ready Manual Tester"',
             "🪙 500 pts",

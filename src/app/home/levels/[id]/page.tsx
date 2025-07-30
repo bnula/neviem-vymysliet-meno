@@ -39,6 +39,7 @@ const TaskElem: React.FC<TaskElemProps> = ({ task, onTaskUpdate }) => {
 
 export default function Page({ params }: { params: { id: string } }) {
     const id = params.id;
+    console.log(id)
     const levelText = levelTexts.filter(l => l.title.includes(id))[0];
 
     const [tasks, setTasks] = useState<Task[]>();
