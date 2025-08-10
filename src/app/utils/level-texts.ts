@@ -227,6 +227,10 @@ const levelTexts: LevelSectionProps[] = [
         ],
         links: [
             {
+                url: "https://http.cat/",
+                text: "😼 http status codes in cat 😹"
+            },
+            {
                 url: "https://www.programiz.com/javascript/online-compiler/",
                 text: "💻 Online editor"
             },
@@ -237,6 +241,26 @@ const levelTexts: LevelSectionProps[] = [
             {
                 url: "https://www.guru99.com/node-js-tutorial.html",
                 text: "📜 Node.js Tutorial (prve 3 lekcie by mali stacit)"
+            },
+            {
+                url: "https://www.youtube.com/watch?v=PkZNo7MFNFg&ab_channel=freeCodeCamp.org",
+                text: "📺 freecodecamp tutorial, ma to 3 a pol hod + maju k tomu aj testik na stranke kde dostanes certifikatik 😅"
+            },
+            {
+                url: "https://www.youtube.com/watch?v=lkIFF4maKMU&ab_channel=Fireship",
+                text: "📺 crash course na zakladne JS koncepty, ma to 12 min a je to nice na taky rychly overview"
+            },
+            {
+                url: "https://www.youtube.com/watch?v=ahCwqrYpIuM&ab_channel=Fireship",
+                text: "📺 crash course na typescript, podobne jak to video na JS"
+            },
+            {
+                url: "https://www.youtube.com/watch?v=zQnBQ4tB3ZA&ab_channel=Fireship",
+                text: "📺 typescript in 100 seconds"
+            },
+            {
+                url: "https://www.youtube.com/watch?v=-MTSQjw5DrM&ab_channel=Fireship",
+                text: "📺 rest api in 100 seconds + potom 10 minut kde typek vytvara API, ak chces vidiet, ako to funguje z tej 2. strany"
             }
         ]
     },
