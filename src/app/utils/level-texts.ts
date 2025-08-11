@@ -247,6 +247,10 @@ const levelTexts: LevelSectionProps[] = [
                 text: "📺 freecodecamp tutorial, ma to 3 a pol hod + maju k tomu aj testik na stranke kde dostanes certifikatik 😅"
             },
             {
+                url: "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comment-your-javascript-code",
+                text: "✅ testik s certifikatom, ide to od uplnych zakladov a konci to pri rekurzivnych funkciach"
+            },
+            {
                 url: "https://www.youtube.com/watch?v=lkIFF4maKMU&ab_channel=Fireship",
                 text: "📺 crash course na zakladne JS koncepty, ma to 12 min a je to nice na taky rychly overview"
             },
